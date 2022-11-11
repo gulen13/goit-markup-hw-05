@@ -607,7 +607,6 @@ header {
 .backdrop.is-hidden .modal {
   opacity: 0;
   transform: translateX(-50%) translateY(-70%);
-  transition: transform 500ms, opacity 500ms;
 }
 .modal-close-btn {
   position: absolute;
