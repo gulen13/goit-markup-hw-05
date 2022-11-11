@@ -63,7 +63,9 @@
       <section class="section-hero">
         <div class="hero-div container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-btn" type="button">Замовити послугу</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!--Наші переваги-->
@@ -132,6 +134,9 @@
                 alt="Набір тексту на компьютері"
                 width="370"
               />
+              <div class="overlay">
+                <p class="overlay-text">Десктопні додатки</p>
+              </div>
             </li>
             <li class="work-item">
               <img
@@ -139,6 +144,9 @@
                 alt="Перегляд макету на ноутбуці"
                 width="370"
               />
+              <div class="overlay">
+                <p class="overlay-text">Мобільні додатки</p>
+              </div>
             </li>
             <li class="work-item">
               <img
@@ -146,6 +154,9 @@
                 alt="Вибір кольору на планшеті"
                 width="370"
               />
+              <div class="overlay">
+                <p class="overlay-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -564,5 +575,16 @@
         </div>
       </div>
     </footer>
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg class="modal-close-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
