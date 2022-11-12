@@ -268,8 +268,11 @@ header {
 .overlay {
   position: absolute;
   bottom: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 370px;
+  min-height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   width: 100%;
 }
